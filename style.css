@@ -528,6 +528,16 @@ form label{
     height: 8rem;
   }
 
+  .encryptButton:hover{
+    background: #052051;
+    transform: none;
+  }
+
+  .decryptButton:hover{
+    background: #E9ECF8;
+    transform: none;
+  }
+
   .rectangle{
     display: flex;
     flex-direction: column;
@@ -603,6 +613,46 @@ form label{
 
   }
 
+  .contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contenedor span{
+
+    position: absolute;
+    width: 23rem;
+    height: 14rem;
+    left: 8rem;
+    top: 2rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    color: #0A3871;
+    background-color: transparent;
+
+  }
+
+  form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 8rem;
+    top: 6.8rem;
+    left: 0.4rem;
+    width: 32rem;
+  }
+
+  .enviar:hover{
+    background: #072B61;
+    transform: none;
+  }
+
 }
 
 @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
@@ -663,6 +713,16 @@ form label{
   .decryptButton{
     margin: 1rem 0rem;
     width: 24rem;
+  }
+
+  .encryptButton:hover{
+    background: #052051;
+    transform: none;
+  }
+
+  .decryptButton:hover{
+    background: #E9ECF8;
+    transform: none;
   }
 
   .rectangle{
@@ -734,5 +794,45 @@ form label{
   .copyright{
     margin: 0.8rem;
 
+  }
+
+  .contenedor{
+    max-width: 60rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contenedor span{
+
+    position: absolute;
+    width: 18rem;
+    height: 14rem;
+    left: 4rem;
+    top: 2rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    color: #0A3871;
+    background-color: transparent;
+
+  }
+
+  form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 8rem;
+    top: 6.8rem;
+    left: -4rem;
+    width: 24rem;
+  }
+
+  .enviar:hover{
+    background: #072B61;
+    transform: none;
   }
 }

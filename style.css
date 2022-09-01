@@ -1,0 +1,738 @@
+html {
+  box-sizing:border-box;
+  font-size: 62.5%;
+  }
+
+body{
+  margin: 0;
+  background-color: #F3F5FC;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.6rem;
+}
+
+.headerBox{
+  width: 100%;
+  position: relative;
+  margin: 1rem auto;
+}
+
+nav{
+    position: absolute;
+    top: 80%;
+    right: 28.8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 1.6rem;
+}
+
+nav a{
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Inter';
+  font-weight: bolder;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color:#0A3871;
+  text-decoration: underline;
+}
+
+main{
+display: flex;
+position: relative;
+flex-direction: column;
+width: 100%;
+height: 100%;
+min-height: 100vh;
+}
+
+.input_text{
+  /*Ingresa el texto aquí*/
+position: absolute;
+width: 58rem;
+height: 34rem;
+left: 8%;
+top: 2.4rem;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 540;
+font-size: 2.8rem;
+line-height: 2.8rem;
+justify-content: baseline;
+
+color: #0A3871;
+background-color: transparent;
+border: 0;
+outline: none;
+resize: none;
+
+}
+
+.useRestrictionArea{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: auto;
+height: 1.8rem;
+left: 8%;
+top: 40rem;
+}
+
+.exclamationMarkSvg{
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+}
+
+.useRestrictionText{
+position: relative;
+width: auto;
+height: 2rem;
+left: 6%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: bold;
+font-size: 1.6rem;
+line-height: 1.8rem;
+
+color: #495057;
+
+}
+
+.buttons{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0rem;
+
+position: absolute;
+width: 6.8;
+height: 6.8rem;
+left: 8%;
+top: 44rem;
+}
+
+.encryptButton{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 2.4rem;
+
+width: 28rem;
+height: 6.8rem;
+left: 8%;
+top: 0rem;
+
+background: #0A3871;
+border-radius: 2.4rem;
+cursor: pointer;
+flex: none;
+order: 0;
+flex-grow: 0;
+color: #FFFFFF;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 1.6rem;
+line-height: 1.8rem;
+text-align: center;
+justify-content: center;
+
+}
+
+.encryptButton:hover{
+  background: #052051;
+  transform: scale(1.1);
+}
+
+.encryptButton:disabled{
+opacity: 0.3;
+transform: none;
+background: #0A3871;
+}
+
+.encryptButton:active{
+  border-color: white;
+}
+
+.decryptButton{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2.4rem;
+
+  width: 28rem;
+  height: 6.8rem;
+  left: 8%;
+  top: 0rem;
+
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  box-sizing: border-box;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0rem 2.4rem;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: #0A3871;
+  justify-content: center;
+}
+
+.decryptButton:hover{
+  background: #E9ECF8;
+  transform: scale(1.1);
+}
+
+.decryptButton:disabled{
+opacity: 0.3;
+transform: none;
+background: #D8DFE8;
+}
+
+.rectangle{
+position: relative;
+width: 44rem;
+height: 49.2rem;
+left: 76rem;
+top: 2.4rem;
+
+background: #FFFFFF;
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 3.2rem;
+}
+
+.textoEncriptado{
+position: absolute;
+width: 40rem;
+height: 36rem;
+left: 2rem;
+top: 2rem;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+line-height: 2.8rem;
+
+color: #49505;
+background-color: transparent;
+
+border: 0;
+outline: none;
+resize: none;
+}
+
+.copiarButton{
+box-sizing: border-box;
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 2.4rem;
+
+position: absolute;
+width: 26rem;
+height: 6.8rem;
+left: 8rem;
+top: 40.8rem;
+
+border: 0.1rem solid #0A3871;
+border-radius: 2.4rem;
+cursor: pointer;
+flex: none;
+order: 1;
+flex-grow: 0;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 1.6rem;
+line-height: 1.8rem;
+text-align: center;
+
+color: #0A3871;
+
+justify-content: center;
+
+}
+
+.copiarButton:hover{
+  background: #F3F5FC;
+  transform: scale(1.1);
+}
+
+.copiado{
+  box-sizing: border-box;
+  padding: 0.8rem;
+  position: absolute;
+  width: 12rem;
+  height: 4rem;
+  left: 16rem;
+  top: 40rem;
+  border: 0.1rem solid #0A3871;
+  border-radius: 2rem;
+  background-color: lightblue;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: #0A3871;
+
+}
+
+.disappear{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0rem;
+
+position: relative;
+width: 34rem;
+height: 12rem;
+left: 12%;
+top: 32rem;
+
+justify-content: center;
+}
+
+.disappear h2{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 2rem;
+line-height: 1.8rem;
+
+text-align: center;
+
+color: #343A40;
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.disappear h3{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 580;
+font-size: 1.6rem;
+line-height: 1.8rem;
+margin-top: 0.6rem;
+text-align: center;
+
+color: #495057;
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.areaMuneco{
+position: absolute;
+width: 34rem;
+height: 28rem;
+left: 12%;
+top: 1.8rem;
+}
+
+footer{
+  background: #000000;
+  padding: 0.6rem 0;
+  text-align: center;
+  margin-top: auto;
+  weight: 8rem;
+  height: 8rem;
+
+  position: relative;
+  bottom: 100%;
+  }
+
+.copyright{
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  margin: 1.8rem;
+
+}
+
+footer img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2.6rem;
+}
+
+/*Pagina de sugerencias*/
+
+.contenedor{
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contenedor span{
+
+  position: absolute;
+  width: 48rem;
+  height: 28rem;
+  left: 2%;
+  top: 4rem;
+  left:14rem;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2rem;
+
+  color: #0A3871;
+  background-color: transparent;
+
+}
+
+form{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 8rem;
+  top: 6rem;
+}
+
+form label{
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  top: 40rem;
+}
+
+.inputPadron{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.mensajeForm{
+  outline: none;
+  resize: none;
+}
+
+.enviar{
+  width: 40%;
+  margin-top: 1.6rem;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  background: #356EA9;
+  border: none;
+  border-radius: 0.6rem;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.enviar:hover{
+  background: #072B61;
+  transform: scale(1.1);
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+
+  .headerBox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerBox img{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    top: -2rem;
+    margin: 0rem auto;
+
+  }
+
+  nav{
+    position: relative;
+    top: -2rem;
+    left: 0rem;
+    justify-content: center;
+  }
+
+  .input_text{
+    width: 38rem;
+    height: 28rem;
+    top: 1rem;
+  }
+
+  .useRestrictionArea{
+    position: relative;
+    width: 36rem;
+    top: 34rem;
+
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 44.8rem;
+    width: 38rem;
+    justify-content: center;
+  }
+
+  .encryptButton{
+    width: 38rem;
+    height: 8rem;
+  }
+
+  .decryptButton{
+    margin: 1.6rem 0rem;
+    width: 38rem;
+    height: 8rem;
+  }
+
+  .rectangle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 64rem;
+    left: 4rem;
+    width: 38rem;
+    height: 52rem;
+    justify-content: center;
+  }
+
+  .areaMuneco{
+    top: 6rem;
+   }
+
+  .textoEncriptado{
+    position: absolute;
+    top: 2.6rem;
+    left: 3rem;
+    width: 32rem;
+    height: 32rem;
+    justify-content: center;
+  }
+
+  .copiarButton{
+    position: absolute;
+    top: 38rem;
+    width: 28rem;
+    left: 5rem;
+  }
+
+  .copiado{
+    position: absolute;
+    width: 18rem;
+    top: 36.8rem;
+    left: 10.2rem;
+  }
+
+  .disappear{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 32rem;
+    left: 2.6rem;
+    width: 32rem;
+    height: 20rem;
+    justify-content: center;
+  }
+
+  .disappear h2{
+    font-size: 140%;
+    line-height: 3rem;
+  }
+
+  .disappear h3{
+    font-size: 140%;
+    line-height: 3rem;
+    margin-top: 1rem;
+  }
+
+  footer{
+    position: relative;
+    top: 56rem;
+    width: 100%;
+  }
+
+  .copyright{
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    margin: 1.2rem;
+
+  }
+
+}
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+
+  .headerBox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerBox img{
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    top: -2rem;
+    margin: 0rem auto;
+
+  }
+
+  nav{
+    position: relative;
+    top: -2rem;
+    left: 0rem;
+    justify-content: center;
+  }
+
+  .input_text{
+    width: 24rem;
+    height: 18rem;
+    top: 1rem;
+  }
+
+  .useRestrictionArea{
+    position: relative;
+    width: 22rem;
+    top: 22rem;
+  }
+
+  .useRestrictionText{
+  left: 12%;
+
+  }
+
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 34.8rem;
+    width: 24rem;
+    justify-content: center;
+  }
+
+  .encryptButton{
+    width: 24rem;
+  }
+
+  .decryptButton{
+    margin: 1rem 0rem;
+    width: 24rem;
+  }
+
+  .rectangle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 46.4rem;
+    left: 2.4rem;
+    width: 24rem;
+    height: 32rem;
+    justify-content: center;
+  }
+
+  .areaMuneco{
+    display: none;
+   }
+
+  .textoEncriptado{
+    position: absolute;
+    top: 2.8rem;
+    left: 2rem;
+    width: 20rem;
+    height: 18rem;
+    justify-content: center;
+  }
+
+  .copiarButton{
+    position: absolute;
+    width: 12rem;
+    top: 24rem;
+    left: 6rem;
+  }
+
+  .copiado{
+    position: absolute;
+    width: 8rem;
+    top: 24rem;
+    left: 8rem;
+  }
+
+
+  .disappear{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 2rem;
+    left: 1.6rem;
+    width: 22rem;
+    height: 12rem;
+    justify-content: center;
+  }
+
+  .disappear h2{
+    font-size: 80%;
+  }
+
+  .disappear h3{
+    font-size: 80%;
+  }
+
+  footer{
+    position: relative;
+    top: 34rem;
+    width: 100%;
+  }
+
+  .copyright{
+    margin: 0.8rem;
+
+  }
+}

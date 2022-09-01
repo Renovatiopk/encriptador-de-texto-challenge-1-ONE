@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="headerBox">
+        <img class="logo" src="imagenes/Logo.svg" alt="Logo de alura con la inicial a">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sugerencias.html">Sugerencias</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <textarea id="input_text" class="input_text" rows="10" cols="50" placeholder="Ingresa el texto aquí"></textarea>
+        <div id="useRestrictionArea" class="useRestrictionArea">
+          <img class="exclamationMarkSvg" src="imagenes/Group.svg" alt="signo de exclamación">
+          <p id="useRestrictionText" class="useRestrictionText">
+            Escribe solo letras minúsculas o números
+          </p>
+        </div>
+        <div class="buttons">
+          <button id="encryptButton" class="encryptButton" type="button">Encriptar</button>
+          <button id="decryptButton" class="decryptButton" type="button">Desencriptar</button>
+        </div>
+      </section>
+      <section>
+        <div class="rectangle">
+          <div>
+            <textarea id="textoEncriptado" class="textoEncriptado" rows="10" cols="50" disabled></textarea>
+            <button id="copiarButton" class="copiarButton" name="button"><div class="copiarButtonText">Copiar</div></button>
+            <p id="copiado"></p>
+          </div>
+          <img id="muneco" class="areaMuneco" src="imagenes/muneco.svg" alt="Muneco con una lupa observando un diamente" class="background" />
+          <div id="desaparecer" class="disappear">
+            <h2>No se ha encontrado ningún texto</h2>
+            <h3>Ingresa el texto que deseas encriptar o desencriptar</h3>
+          </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/david-e-velasquez-583b84166/" target="_blank"><img src="imagenes/linkedin.png" alt="Logo de linkedin"/></a>
+      <a href="https://github.com/Renovatiopk" target="_blank"><img src="imagenes/github.png" alt="Logo de github"/></a>
+      <p class="copyright">Creado por Renovatio / David E. Velasquez</p>
+    </footer>
+    <script type="text/javascript" src="script.js">
+    </script>
+  </body>
+</html>

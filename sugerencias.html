@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>sugerencias</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="headerBox">
+        <img class="logo" src="imagenes/Logo.svg" alt="Logo de alura con la inicial a">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sugerencias.html">Sugerencias</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="contenedor">
+        <span>Si deseas dejarme algún comentario, sugerencia u observación, estaré encantado de leerte</span>
+        <form action="index.html" method="post">
+          <label for="nombreApellido">Nombre</label>
+          <input id="nombreApellido" class="inputPadron" type="text" placeholder="Nombre" required/>
+          <label for="correoElectronico">E-mail</label>
+          <input id="correoElectronico" class="inputPadron" type="email" required placeholder="email@dominio.com"/>
+          <label for="mensajeForm">Mensaje</label>
+          <textarea id="mensajeForm" class="mensajeForm" rows="10" cols="70" required></textarea>
+          <input class="enviar" type="submit" value="Enviar Formulario"/>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.linkedin.com/in/david-e-velasquez-583b84166/" target="_blank"><img src="imagenes/linkedin.png" alt="Logo de linkedin"/></a>
+      <a href="https://github.com/Renovatiopk" target="_blank"><img src="imagenes/github.png" alt="Logo de github"/></a>
+      <p class="copyright">Creado por Renovatio / David E. Velasquez</p>
+    </footer>
+  </body>
+</html>

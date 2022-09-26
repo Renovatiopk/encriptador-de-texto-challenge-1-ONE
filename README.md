@@ -39,6 +39,6 @@ se logró implementar la solución del sitio web con los requerimientos solicita
 Se usó HTML para la estructura general del sitio, se aplicaron estilos de css para crear la interfaz y algunos conceptos de responsive para hacer el sitio adaptable
 a distintos dispositivos.
 Desde la parte de javaScript se trabajó con la implementación de funciones, eventos y manejo del DOM, así como el uso de expresiones regulares
-para solventar uno de los requerimientos, entre otras implementaciones generales.
+para solventar uno de los requerimientos y el uso del localstorage para almacenar nuevas palabras en el juego, entre otras implementaciones generales.
 
 El sitio se encuentra en su versión v0.1.0 y se continuará mejorando progresivamente.
